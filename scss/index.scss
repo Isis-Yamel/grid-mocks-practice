@@ -1,0 +1,52 @@
+/* ---- variables ---- */
+
+$purple: #27104e;
+$deep-blue: #2c698d;
+$offWhite: #f8f9fb;
+
+$tittleFont: 24px;
+
+/* ---- Mixins ---- */
+
+@mixin size {
+    width: 100%; //to use @include size
+}
+
+/* ---- Header ---- */
+
+.head__grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 150px 1fr;
+
+    &--color {
+        color: $deep-blue;
+    }
+}
+
+.grid__list {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    list-style: none;
+}
+
+.grid__main {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.text__size {
+    width: 420px;;
+}
+
+.footer__style {
+    text-align: center;
+}
+
+/* ---- Main ---- */
+
+/* ---- Footer ---- */
