@@ -17,17 +17,23 @@ $tittleFont: 24px;
 .head__grid {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
 
     &--color {
         color: $deep-blue;
+    }
+
+    &--drop {
+        height: 40%;
+        margin: auto;
+        width: 80%;
     }
 }
 
 .grid__list {
     align-self: center;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     list-style: none;
 }
