@@ -1,0 +1,31 @@
+{
+  "name": "grid-mocks-practice",
+  "version": "1.0.0",
+  "description": "travel app",
+  "main": "index.js",
+  "dependencies": {
+    "pattern.css": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isis-Yamel/grid-mocks-practice.git"
+  },
+  "author": "Isis Yamel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isis-Yamel/grid-mocks-practice/issues"
+  },
+  "homepage": "https://github.com/Isis-Yamel/grid-mocks-practice#readme"
+}
