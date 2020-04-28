@@ -12,6 +12,7 @@ const mlr = ({
     const root = document.documentElement;
 
     var listOfLanguages = Object.keys(mLstrings[0]);
+    var mlrLangInUse;
     mlrLangInUse = chosenLang;
 
     (function createMLDrop() {
@@ -51,22 +52,22 @@ const mlr = ({
             stringToBeResolved.textContent = resolvedText;
         });
     }
+    const resolveMLString = (stringToBeResolved, mLstrings) => {
+        var matchingStringIndex = mLstrings.find(function(stringObj) {
+            // Create an array of the objects values:
+            let stringValues = Object.values(stringObj);
+            // Now return if we can find that string anywhere in there
+            return stringValues.includes(stringToBeResolved);
+        });
+        if (matchingStringIndex) {
+            return matchingStringIndex[mlrLangInUse];
+        } else {
+            // If we don't have a match in our language strings, return the original
+            return stringToBeResolved;
+        }
+    }
 };
 
-const resolveMLString = (stringToBeResolved, mLstrings) => {
-    var matchingStringIndex = mLstrings.find(function(stringObj) {
-        // Create an array of the objects values:
-        let stringValues = Object.values(stringObj);
-        // Now return if we can find that string anywhere in there
-        return stringValues.includes(stringToBeResolved);
-    });
-    if (matchingStringIndex) {
-        return matchingStringIndex[mlrLangInUse];
-    } else {
-        // If we don't have a match in our language strings, return the original
-        return stringToBeResolved;
-    }
-}
 
 mlr({
     dropID: "langDrop",
