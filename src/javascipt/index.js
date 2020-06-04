@@ -1,5 +1,9 @@
 import i18n from "../files/i18n";
 import keysi18n from "../files/keys";
+import mainAsset from '../files/assets';
+
+require('../css/normalize.css');
+require('../css/index.css');
 
 const mlr = ({
     dropID = "langDrop",
@@ -77,3 +81,5 @@ mlr({
     countryCodes: true,
     countryCodeData: i18n,
 });
+
+mainAsset();

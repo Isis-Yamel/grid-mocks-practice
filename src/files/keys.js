@@ -21,7 +21,7 @@ let keysi18n = [
         English: "Contact",
         German: "Kontakt",
         Portuguese: "Contato",
-        Spanish: "Contato",
+        Spanish: "Contacto",
     },
     {
         English: "Simulate Tasks",
